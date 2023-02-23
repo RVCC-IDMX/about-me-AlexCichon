@@ -1,0 +1,31 @@
+body {
+    font-family:Julee;
+    background-color: #6D2BB3;
+    color: #B3B236;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: PT Sans Narrow;
+    font-size: 38pt;
+}
+
+header {
+    text-align:center;
+}
+
+#hero, footer {
+    color:#FFFF70;
+    border: 2px solid #9A44FC;
+    background-color:#5532E6;
+    text-align:center;
+    padding:10px;
+}
+
+#hero img {
+    width:200px;
+}
+
+#bio {
+    text-align:center;
+}
