@@ -136,16 +136,68 @@
     <p>
         &copy; 2001 Daft Punk
     </p>
+    <section id="contact">
+        <h2>Reach Out:</h2>
+        <form method="post" data-netlify="true">
+
+           <fieldset>
+            <legend>Conact Form</legend>
+
+            <label for="name">Your Name:</label>
+         <input id="name" name="name"
+         type="text">
+
+         <br>
+
+         <label for="email">Your Email:</label>
+         <input id="email" name="email" type="email" required>
+         
+        <br>
+
+         <label for="phone">Your Phone:</label>
+         <input id="phone" name="phone" type="tel" required>
+       
+         <br>
+<label for="type">Phone Type:</label>
+<select id="type" name="type">
+    <option value="Home">Home</option>
+    <option value="Cell">Cell</option>
+    <option value="Work">Work</option>
+</select>
+
+<br>
+<label for="message">Your Message:</label>
+<textarea id="message" name="message"></textarea>
+
+<br>
+<fieldset>
+    <legend>Contact Back?</legend>
+    <input id="yes" name="contactback" type="radio" checked="true" value="yes">
+    <label for="yes">Contact me back.</label>
+    <input id="no" name="contactback" type="radio" value="no">
+    <label for="no">No thanks.</label>
+</fieldset>
+         
+         <button type="submit">Submit Your Answers.</button>
+        </fieldset>
+
+        </form>
+    </section>
+    <style>
+        #contact {
+            margin-bottom: 30px;
+        }
+    </style>
     <h2>A short Video:</h2>
     <section id="video">
         <iframe width="560" height="315" 
         src="https://www.youtube.com/embed/CxM2sYstm2c" title="YouTube video player" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+img/Cards-640w.jpg.jpg        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         allowfullscreen></iframe>
     </section>
     
 <footer>
-    &copy; © 2022 - Alex Cichon
+    &copy; © 2023 - Alex Cichon
 </footer>
 </body>
 </html>
