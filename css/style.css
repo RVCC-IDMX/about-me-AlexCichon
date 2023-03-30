@@ -12,6 +12,12 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
     margin: .1em;
 }
+h4 {
+    margin: .1em;
+    margin-right: auto;
+    margin-left: auto;
+
+}
 header {
     text-align:center;
 }
@@ -112,6 +118,37 @@ header {
     border-top-left-radius: .2em;
     border-bottom-right-radius: .2em;
 }
+/* Contact  Form */
+#contact {
+    max-width: 400px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:75px;
+}
+#contact fieldset {
+    border: 2px solid #B3B236;
+    padding: 1em;
+    border-radius: 1em;
+}
+#contact legend {
+    background-color:#B3B236;
+    color:black;
+    padding:1ex;
+    border-bottom-right-radius: 1ex;
+    border-top-left-radius: 1ex;
+}
+#contact fieldset {
+    display:grid;
+    margin-top: 1ex;
+    margin-bottom: 1ex;
+}
+#contact label {
+    margin:1ex;
+}
+#contact fieldset fieldset {
+    grid-template-columns: 30px auto;
+}
+
 /* tablet size */
 @media screen and (min-width: 60em) {
     figure {
@@ -158,9 +195,11 @@ header {
 /* video framing and refactor */
 #video  { 
     width: 400px;
-    border: .5px dotted black;
+    border: 10px dotted black;
     border-radius:400px;
     overflow:hidden;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* tablet size */
