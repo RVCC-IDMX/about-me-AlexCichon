@@ -92,7 +92,8 @@ such that no text wraps
         flex-direction: row;
         justify-content: space-between;
     }
-    .navbar u1 {
+
+    .navbar ul {
         display:flex;
         justify-content: space-between;
     }
