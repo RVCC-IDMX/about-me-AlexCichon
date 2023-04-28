@@ -46,6 +46,7 @@ footer {
 /* Bio Section */
 #bio {
     text-align: center;
+    font-size: 1.50rem;
 }
 
 /* Hobbies Section */
@@ -54,12 +55,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 1.50rem;
 }
-
-
-#hobbies * {}
-
-
 
 #hobbies ul {
     width: 350%;
@@ -119,6 +116,7 @@ footer {
     border: 2px solid #B3B236;
     margin-bottom: 2rem;
     text-align: center;
+    font-size: 1.25rem;
 }
 
 #information div {
