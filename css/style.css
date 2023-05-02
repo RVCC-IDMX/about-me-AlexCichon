@@ -1,3 +1,4 @@
+/* code on font/background color used for text/background */
 body {
     font-family: Julee;
     background-color: #6D2BB3;
@@ -12,7 +13,10 @@ h5,
 h6 {
     font-family: PT Sans Narrow;
     font-size: 38pt;
+    text-align: center;
 }
+
+
 
 h2 {
     margin: .1em;
@@ -233,7 +237,7 @@ footer {
 /* video framing and refactor */
 #video {
     width: 400px;
-    border: 10px dotted black;
+    border: 12px dotted black;
     border-radius: 400px;
     overflow: hidden;
     margin-left: auto;
@@ -287,3 +291,4 @@ footer {
     }
 
 } */
+
