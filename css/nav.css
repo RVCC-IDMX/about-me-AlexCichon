@@ -101,75 +101,89 @@ such that no text wraps */
 
 }
 
+/* Refactored code from https://codepen.io/angeladelise/pen/NWGWmPZ */
 
-.checkbtn {
-    font-size: 30px;
-    color: white;
-    float:right;
-    margin-right: 40px;
-    
-    /*
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
+:root {
+    --animation-curve: cubic-bezier(1, 0, 0, 1);
+  }
+  
+  body {
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  label {
+    width: 4em;
+    height: 1.5em;
+    background-color: white;
+    position: absolute;
     cursor: pointer;
-    
-    */
-}
+    right: 0;
 
+  }
+  label::before, label::after {
+    content: "";
+    width: 4em;
+    height: 1.5em;
+    background-color: white;
+    position: absolute;
+    display: block;
+    color: red;
+    transition: all 0.6s var(--animation-curve);
+  }
+  label::before {
+    top: -125%;
+    left: 0%;
+    transform: rotateZ(0deg);
+    transform-origin: right bottom;
+  }
+  label::after {
+    bottom: -125%;
+    left: 0%;
+    transform: rotateZ(0deg);
+    transform-origin: right top;
+  }
+  
+  #toggle:checked ~ label::before {
+    content: "";
+    background-color: white;
+    transform: rotateZ(-90deg);
+    left: 10%;
+  }
+  
+  #toggle:checked ~ label::after {
+    content: "";
+    background-color: white;
+    transform: rotateZ(90deg);
+    left: 10%;
+  }
+  
+  #toggle:checked ~ label {
+    background-color: #333;
+  }
+  
+  #toggle ~ label {
+    transition: all 0.5s var(--animation-curve);
+  }
+  
+  input {
+    display:grid;
+  }
+
+/* Fix below later */
+/*
 #check {
     display: none;
     
-}
+}*/
 
-#check:checked ~ ul {
+#toggle:checked ~ ul {
     display:none;
 }
 
-#check:checked ~ label {
-    font-weight: bold;
-    
-}
-
-/*
-@media (max-width: 952px) {
-    label.logo {
-        font-size: 30px;
-        padding-left: 50px;
-    }
-
-    nav ul li a {
-        font-size: 16px;
-    }
-}
-/*
-@media (max-width: 858px) {
-    .checkbtn {
-        display: block;
-    }
-
-    ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-
-    }
-
-    nav ul li a {
-        font-size: 20px;
-    }
-}*/
 
 a:hover,
 a.active {
