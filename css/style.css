@@ -244,7 +244,7 @@ footer {
     margin-right: auto;
 }
 
-/* tablet size 
+/* tablet size */
 @media screen and (min-width: 60em) {
     figure {
         display: grid;
@@ -269,7 +269,7 @@ footer {
     }
 }
 
-/* large screen size 
+ large screen size 
 
 @media screen and (min-wdth: 100em) {
 
@@ -290,5 +290,5 @@ footer {
         display: block;
     }
 
-} */
+} 
 

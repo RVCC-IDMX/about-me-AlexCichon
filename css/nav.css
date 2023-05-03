@@ -173,12 +173,7 @@ such that no text wraps */
     display:grid;
   }
 
-/* Fix below later */
-/*
-#check {
-    display: none;
-    
-}*/
+
 
 #toggle:checked ~ ul {
     display:none;
