@@ -237,7 +237,7 @@ footer {
 /* video framing and refactor */
 #video {
     width: 400px;
-    border: 12px dotted black;
+    border: 10px dotted black;
     border-radius: 400px;
     overflow: hidden;
     margin-left: auto;
