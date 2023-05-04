@@ -86,7 +86,7 @@ media query for non-mobile nav bar
 min-width set to width of nav elements 
 such that no text wraps */
 
-/* hamburger menu navbar code */
+/* hamburger menu navbar code (navbar is for phone users */
 @media screen and (min-width:1000px) {
 
     .navbar {
